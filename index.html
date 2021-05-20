@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>This is Landing Page</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__navbar">
+        <a href="#top"><img src="images/logo.png" alt="logo image" class="header__logo" /></a>
+        <nav class="menu">
+          <button class="menu__hamburger" data-id="mobile-menu" aria-haspopup="true" aria-expanded="false" aria-controls="menu__list">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" data-id="mobile-menu">
+              <path class="hamburger hamburger-active" d="M3 12h18M3 6h18M3 18h18" data-id="mobile-menu"></path>
+              <path class="cross" d="M18 6L6 18M6 6l12 12" data-id="mobile-menu"></path>
+            </svg>
+          </button>
+          <ul class="menu__list" id="menu__list" role="menubar">
+            <li class="menu__item menu__item-active"><a href="#top" class="menu__link">Main</a></li>
+            <li class="menu__item menu__item-active"><a href="#about" class="menu__link">About</a></li>
+            <li class="menu__item menu__item-active"><a href="#contacts" class="menu__link">Contact Us</a></li>
+            <li class="menu__item menu__item-active"><a href="#footer" class="menu__link">More</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="title-section">
+        <h1 class="title-section__heading">Company's Project</h1>
+        <a href="#contacts" class="title-section__button">Contact Us</a>
+      </section>
+      <section class="about" id="about">
+        <h2 class="about__heading">Learn more</h2>
+        <div class="history">
+          <img src="images/1.png" alt="history section image" class="history__image" loading="lazy" />
+          <p class="history__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem laborum quis cupiditate asperiores perspiciatis esse corrupti voluptatem aspernatur? Vel, a. Porro minima aperiam officia excepturi quae, libero, nihil expedita ut laborum ipsam culpa odit dolor temporibus, accusamus
+            laudantium? Voluptates commodi aliquam qui suscipit in nihil atque totam enim fugit voluptas!
+          </p>
+        </div>
+        <div class="future">
+          <img src="images/2.png" alt="future section image" class="future__image" loading="lazy" />
+          <p class="future__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe nemo tempore culpa laudantium, earum facere quo voluptate nulla similique, quia impedit reiciendis quis placeat velit officiis, totam cum. Rerum fugiat commodi doloribus quos. Id sunt dolor tempore iste? Nam suscipit quo
+            molestias qui perspiciatis corporis alias amet cupiditate et?
+          </p>
+        </div>
+      </section>
+      <section id="contacts" class="contacts">
+        <h2 class="contacts__title">Contact Us</h2>
+        <form action="submit" class="form">
+          <label class="form__field"></label>
+          <input id="name-id" type="text" class="form__input" placeholder="Name" required />
+          <label class="form__field"></label>
+          <input id="email-id" type="email" class="form__input" placeholder="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" />
+          <label class="form__field"></label>
+          <textarea id="textarea-id" cols="30" rows="10" class="form__textarea" placeholder="Share your thoughts..." required maxlength="300"></textarea>
+          <button class="form__submit-btn">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__content">
+        <div class="footer__info">
+          <span class="footer__address"><img class="footer__icon" src="images/loc.svg" alt="address icon" />Tallinn University Narva rd 25, 10120 Tallinn</span>
+          <a href="tel:+3720000000" class="footer__address"><img class="footer__icon" src="images/phone.svg" alt="phone icon" />+372 000 0000</a>
+          <a href="mailto:sarapov.ss@gmail.com" class="footer__address"><img class="footer__icon" src="images/mail.svg" alt="mail icon" />sarapov@sarapov.ee</a>
+        </div>
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">How to build a spacecraft</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Another usefull article</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Don't go away</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">I dont believe this is true</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Click if you are bored</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Have a nice day after all</a></li>
+          </ul>
+        </nav>
+      </div>
+      <span class="footer__line"></span>
+      <span class="footer__copyright">&copy; Copyright</span>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

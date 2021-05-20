@@ -197,6 +197,9 @@ html {
     margin-bottom: 16px;
     border: none;
     border-radius: 0;
+    resize: vertical;
+    height: 200px;
+    max-height: 300px;
   }
   &__submit-btn {
     align-self: flex-end;

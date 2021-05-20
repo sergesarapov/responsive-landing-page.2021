@@ -287,6 +287,9 @@ html {
   margin-bottom: 16px;
   border: none;
   border-radius: 0;
+  resize: vertical;
+  height: 200px;
+  max-height: 300px;
 }
 
 .form__submit-btn {
